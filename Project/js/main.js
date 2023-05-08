@@ -151,22 +151,23 @@ jQuery(window).on('load', function() {
     }
 });
 
+
 $(".open").click(function() {
-  var container = $(this).parents(".topic");
-  var answer = container.find(".answer");
-  var trigger = container.find(".faq-t");
+    var container = $(this).parents(".topic");
+    var answer = container.find(".answer");
+    var trigger = container.find(".faq-t");
 
-  answer.slideToggle(200);
+    answer.slideToggle(200);
 
-  if (trigger.hasClass("faq-o")) {
-    trigger.removeClass("faq-o");
-  } else {
-    trigger.addClass("faq-o");
-  }
+    if (trigger.hasClass("faq-o")) {
+        trigger.removeClass("faq-o");
+    } else {
+        trigger.addClass("faq-o");
+    }
 
-  if (container.hasClass("expanded")) {
-    container.removeClass("expanded");
-  } else {
-    container.addClass("expanded");
-  }
+    if (container.hasClass("expanded")) {
+        container.removeClass("expanded");
+    } else {
+        container.addClass("expanded");
+    }
 });
